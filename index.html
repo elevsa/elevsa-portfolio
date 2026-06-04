@@ -292,13 +292,10 @@
         <span>En l&iacute;nea &middot; Powered by Cognigy</span>
       </div>
       <div class="chatbox-body">
-        <iframe
-          src="https://webchat-trial.cognigy.ai/v3/65e724280472b2034fcf4bee37df96d806a1e9c23b314922cb947b46a44b2221"
-          style="width:100%;height:460px;border:none;display:block"
-          title="Asistente virtual Eva - ELEVSA"
-          allow="microphone"
-          loading="lazy">
-        </iframe>
+        <div class="chatbox-placeholder">
+          <div class="ph-icon">&#128172;</div>
+          <p><strong style="color:rgba(255,255,255,0.65)">Eva est&aacute; lista para ayudarte</strong><br/>El asistente aparece como bot&oacute;n flotante en la esquina inferior derecha de la p&aacute;gina.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -347,6 +344,13 @@
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 90) cur = s.id; });
     links.forEach(a => { a.style.color = a.getAttribute('href') === '#'+cur ? 'var(--orange-light)' : ''; });
   });
+</script>
+
+<script src="https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js"></script>
+<script>
+  initWebchat(
+    "https://endpoint-trial.cognigy.ai/65e724280472b2034fcf4bee37df96d806a1e9c23b314922cb947b46a44b2221"
+  );
 </script>
 </body>
 </html>
