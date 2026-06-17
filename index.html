@@ -45,7 +45,8 @@
     /* HERO */
     #inicio { min-height: 100vh; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 55%, var(--navy-light) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 5% 80px; position: relative; overflow: hidden; }
     #inicio::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(34,114,195,0.18) 0%, transparent 70%); pointer-events: none; }
-    .hero-grid { position: absolute; inset: 0; opacity: 0.04; background-image: linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px); background-size: 48px 48px; }
+    .hero-grid { position: absolute; inset: 0; opacity: 0.04; background-image: linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; z-index: 0; }
+    .hero-badge, .hero-logo, .hero-title, .hero-subtitle, .hero-actions, .hero-stats { position: relative; z-index: 1; }
     .hero-badge { display: inline-block; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.20); color: var(--orange-light); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 18px; border-radius: 20px; margin-bottom: 28px; }
     .hero-logo { height: 88px; margin-bottom: 32px; filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5)); }
     .hero-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 700; line-height: 1.08; color: var(--white); margin-bottom: 20px; letter-spacing: -0.01em; }
